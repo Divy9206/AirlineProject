@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-
+import { GoogleAuthService } from './core/services/google-auth.service';
+import { SocialUser } from 'angularx-social-login';
+import { filter, switchMap, exhaustMap, switchMapTo, map, tap } from 'rxjs/operators';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +9,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AirlineCheckIn';
+  constructor(private authService: GoogleAuthService) {
+
+    // this.authService.user$.pipe(
+    //   filter((x: SocialUser) => !x),
+    //   map(x => this.authService.signInWithGoogle()),
+    //   tap( x => console.log('gdgd'))
+    // );
+
+  }
+
+
+
 }

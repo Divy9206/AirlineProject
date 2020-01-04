@@ -4,6 +4,8 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { HeaderComponent } from './header/header.component';
 import { MaterialModule } from '../shared/material.module';
 import { LoginComponent } from './login/login.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { CoreRoutingModule } from './core-routing.module';
 
 
 
@@ -11,11 +13,13 @@ import { LoginComponent } from './login/login.component';
   declarations: [
     NavigationComponent,
     HeaderComponent,
-    LoginComponent
+    LoginComponent,
+    LandingPageComponent
   ],
   imports: [
     CommonModule,
-    MaterialModule
+    MaterialModule,
+    CoreRoutingModule
   ],
   exports: [
     NavigationComponent,

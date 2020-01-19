@@ -19,6 +19,7 @@ export class GoogleAuthService {
   }
 
   signOut(): void {
+    this.loggedIn = false;
     this.authService.signOut();
   }
 }

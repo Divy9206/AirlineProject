@@ -9,14 +9,7 @@ import { filter, switchMap, exhaustMap, switchMapTo, map, tap } from 'rxjs/opera
 })
 export class AppComponent {
   title = 'AirlineCheckIn';
-  constructor(private authService: GoogleAuthService) {
-
-    // this.authService.user$.pipe(
-    //   filter((x: SocialUser) => !x),
-    //   map(x => this.authService.signInWithGoogle()),
-    //   tap( x => console.log('gdgd'))
-    // );
-
+  constructor() {
   }
 
 

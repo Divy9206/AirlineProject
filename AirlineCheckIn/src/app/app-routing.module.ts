@@ -11,7 +11,6 @@ const routes: Routes = [
     {
         path: 'landing-page',
         loadChildren: () => import('./core/core.module').then(mod => mod.CoreModule),
-        // canActivate: [AuthorizeAppGuard]
     }
 ];
 

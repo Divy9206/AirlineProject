@@ -1,5 +1,9 @@
-<div class="login">
-    <button mat-raised-button color="primary">
-        Login using Google
-    </button>
+<div fxLayout="row" fxLayoutAlign="center end" class="login">
+    <div fxFlex="20"></div>
+    <div fxFlex="60">
+        <button mat-raised-button color="primary" (click)="doLogin()">
+            Login using Google
+        </button>
+    </div>
+    <div fxFlex="20"></div>
 </div>

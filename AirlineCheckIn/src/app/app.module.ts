@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MaterialModule } from './shared/material.module';
+
 
 
 const config = new AuthServiceConfig([
@@ -31,7 +33,8 @@ export function provideConfig() {
     CoreModule,
     BrowserAnimationsModule,
     SocialLoginModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MaterialModule
   ],
   providers: [
     {

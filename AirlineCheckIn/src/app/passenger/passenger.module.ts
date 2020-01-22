@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { PassengerDetailsComponent } from './passenger-details/passenger-details.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [PassengerDetailsComponent],
   imports: [
     CommonModule
   ]

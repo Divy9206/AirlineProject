@@ -9,6 +9,8 @@ import { CoreModule } from './core/core.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from './shared/material.module';
+import { PassengerDetailsComponent } from './passenger/passenger-details/passenger-details.component';
+import { PassengerListComponent } from './passenger/passenger-list/passenger-list.component';
 
 
 
@@ -25,7 +27,9 @@ export function provideConfig() {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PassengerDetailsComponent,
+    PassengerListComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +39,7 @@ export function provideConfig() {
     SocialLoginModule,
     FlexLayoutModule,
     MaterialModule
+    
   ],
   providers: [
     {

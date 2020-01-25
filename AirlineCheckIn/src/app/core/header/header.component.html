@@ -15,15 +15,15 @@
 </mat-toolbar>
 
 <mat-sidenav-container class="example-container">
-    <mat-sidenav #drawer mode="side" [fixedInViewport]="true" fixedTopGap="65">
+    <mat-sidenav #drawer mode="side" [fixedInViewport]="true" fixedTopGap="65" style="width: 15em;">
         <mat-nav-list>
             <mat-list-item [matMenuTriggerFor]="menu">
                 <mat-icon>unfold_more</mat-icon>
                 <a matline>Passenger</a>
             </mat-list-item>
-            <mat-menu #menu="matMenu" >
+            <mat-menu #menu="matMenu">
                 <button mat-menu-item (click)="router.navigate(['passenger-details'])" >Passenger Details</button>
-                <button mat-menu-item (click)="onSidenavClose()">Passenger List</button>
+                <button mat-menu-item (click)="router.navigate(['passenger-list'])">Passenger List</button>
             </mat-menu>
         </mat-nav-list>
     </mat-sidenav>

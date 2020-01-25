@@ -1,0 +1,10 @@
+<app-header></app-header>
+
+<div class="flex-container">
+    <h1 style="margin-left: auto;">Passengers List</h1>
+    <mat-grid-list cols="4" rowHeight="80px">
+        <mat-grid-tile *ngFor="let tile of tiles" [colspan]="tile.cols" [style.background]="tile.color">
+          {{tile.text}}
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>

@@ -1,45 +1,45 @@
 <app-header></app-header>
-<div class="flex-container">
-    <h1>Passengers Details</h1>
+<div>
+    <h1 class="header">Passengers Details</h1>
 
     <form>
-        <div>
+        <div class="flex-container">
             <mat-form-field appearance="outline" class="formalign">
                 <mat-label>Name</mat-label>
                 <input matInput placeholder="Name here .." required>
             </mat-form-field>
         </div>
-        <div>
+        <div class="flex-container">
             <mat-form-field appearance="outline" class="formalign">
                 <mat-label>Passport</mat-label>
-                <input matInput placeholder="Passport Number here ..">
+                <input id="passportInput" matInput placeholder="Passport Number here ..">
             </mat-form-field>
         </div>
-        <div>
+        <div class="flex-container">
             <mat-form-field appearance="outline" class="formalign">
                 <mat-label>Address</mat-label>
-                <input matInput placeholder="Address here ..">
+                <input id="addressInput" matInput placeholder="Address here ..">
             </mat-form-field>
         </div>
-        <div>
+        <div class="flex-container">
             <mat-form-field appearance="outline" class="formalign">
                 <mat-label>PNR</mat-label>
-                <input matInput placeholder="PNR here .." disabled>
+                <input id="pnrInput" matInput placeholder="PNR here .." disabled>
             </mat-form-field>
         </div>
-        <div>
+        <div class="flex-container">
             <mat-form-field appearance="outline" class="formalign">
                 <mat-label>Seat Number</mat-label>
-                <input matInput placeholder="Seat Number here .." disabled>
+                <input id="seatInput" matInput placeholder="Seat Number here .." disabled>
             </mat-form-field>
         </div>
-        <div>
-            <mat-form-field appearance="outline"class="formalign">
+        <div class="flex-container">
+            <mat-form-field appearance="outline" class="formalign">
                 <mat-label>Flight Number</mat-label>
-                <input matInput placeholder="Flight Number here .." disabled>
+                <input id="flightInput" matInput placeholder="Flight Number here .." disabled>
             </mat-form-field>
         </div>
-        <div>
+        <div class="flex-container">
             <button mat-raised-button color="primary">Submit</button>&nbsp;&nbsp;&nbsp;
             <button mat-raised-button color="warn">Cancel</button>
         </div>

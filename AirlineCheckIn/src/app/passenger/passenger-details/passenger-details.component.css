@@ -1,7 +1,15 @@
+.header {
+    margin-left: 44%;
+}
+
 .flex-container {
     margin-left: 39%;
 }
 
+.nameInput {
+    width: 100;
+}
+
 .formalign {
-    width: 25em;
+    width: 40%;
 }
